@@ -238,10 +238,10 @@
     function fillFormProduct(){
         const index = checkboxAll.checked ? 1 : 0;
         const product_id = +document.querySelectorAll('input[type=checkbox]:checked')[index].value;
-        const product = productsList.filter((product) => product.product_id === product_id);
-        fields.amount.value = product[0].amount;
-        fields.description.value = product[0].description;
-        fields.price.value = product[0].price;
-        fields.product_id.value = product[0].product_id;
+        const [ product ] = productsList.filter((product) => product.product_id === product_id);
+        fields.amount.value = product.amount;
+        fields.description.value = product.description;
+        fields.price.value = product.price;
+        fields.product_id.value = product.product_id;
     }
 
