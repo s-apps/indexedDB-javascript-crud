@@ -88,12 +88,12 @@ function updateProduct(product_id, product){
         };
 
         updateRequest.onerror = e => {
-            alert('Erro: ', e.target.error);
+            alert('Erro: ' + e.target.error);
         };
     };
 
     productRequest.onerror = e => {
-        alert('Erro: ', e.target.error);
+        alert('Erro: ' + e.target.error);
     };
 }
 

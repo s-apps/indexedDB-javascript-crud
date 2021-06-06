@@ -3,7 +3,6 @@
     const query = document.getElementById('query');
     const checkboxAll = document.getElementById('checkboxAll');
     const checkboxProducts = document.getElementsByName('products[]');
-    const mensagens = new bootstrap.Toast('#mensagens');
     let totalOfSelectedProducts = 0;
     let action = document.getElementById('action');
 
