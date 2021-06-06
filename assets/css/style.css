@@ -1,0 +1,30 @@
+main > .container {
+  padding: 70px 15px 0;
+}
+
+.card {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.table-responsive {
+  overflow-y: auto;
+  height: 500px;
+}
+
+tr td {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.btn.disabled, .btn:disabled  {
+  opacity: .35;
+}
+
+@media (max-width: 575.98px) { 
+
+  .card-footer button span {
+    display: none;
+  }
+}
